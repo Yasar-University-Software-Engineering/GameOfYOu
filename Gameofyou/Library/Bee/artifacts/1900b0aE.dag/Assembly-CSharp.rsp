@@ -357,6 +357,8 @@
 -analyzer:"C:/Program Files/Unity/Hub/Editor/2022.3.10f1/Editor/Data/Tools/Unity.SourceGenerators/Unity.SourceGenerators.dll"
 "Assets/Scripts/GemRotate.cs"
 "Assets/Scripts/GemSilver.cs"
+"Assets/Scripts/GlobalScore.cs"
+"Assets/Scripts/GlobalTimer.cs"
 "Assets/unity-chan!/Unity-chan! Model/Scripts/AutoBlink.cs"
 "Assets/unity-chan!/Unity-chan! Model/Scripts/CameraController.cs"
 "Assets/unity-chan!/Unity-chan! Model/Scripts/FaceUpdate.cs"
