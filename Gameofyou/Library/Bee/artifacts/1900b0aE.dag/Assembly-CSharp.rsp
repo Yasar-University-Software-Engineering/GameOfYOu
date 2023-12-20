@@ -363,6 +363,7 @@
 "Assets/Scripts/LevelDeath.cs"
 "Assets/Scripts/LevelScripts/Level001.cs"
 "Assets/Scripts/MainMenuFunction.cs"
+"Assets/Scripts/PauseGame.cs"
 "Assets/Scripts/PlatformGripper.cs"
 "Assets/Scripts/RedirectToLevel.cs"
 "Assets/Scripts/RotateSky.cs"
