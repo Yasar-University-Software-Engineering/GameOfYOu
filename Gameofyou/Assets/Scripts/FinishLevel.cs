@@ -15,9 +15,12 @@ public class FinishLevel : MonoBehaviour
     public int timeCalc;
     public int scoreCalc;
     public int totalScored;
+    public GameObject levelBlocker;
 
     void OnTriggerEnter()
     {
+        levelBlocker.SetActive(true);
+        levelBlocker.transform.parent = null;
         timeCalc = GlobalTimer.extendScore * 100;
         timeLeft.GetComponent<TMP_Text>().text = "Time Left: " + GlobalTimer.extendScore + " x 100";
         theScore.GetComponent<TMP_Text>().text = "Score: " + GlobalScore.currentScore;
