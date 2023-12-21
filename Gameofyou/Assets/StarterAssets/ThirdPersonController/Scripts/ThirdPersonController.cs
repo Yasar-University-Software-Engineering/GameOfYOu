@@ -1,4 +1,6 @@
 ﻿ using UnityEngine;
+using System.Collections;
+using System.Collections.Generic;
 #if ENABLE_INPUT_SYSTEM 
 using UnityEngine.InputSystem;
 #endif
@@ -11,9 +13,11 @@ namespace StarterAssets
     [RequireComponent(typeof(CharacterController))]
 #if ENABLE_INPUT_SYSTEM 
     [RequireComponent(typeof(PlayerInput))]
+
 #endif
     public class ThirdPersonController : MonoBehaviour
     {
+
         [Header("Player")]
         [Tooltip("Move speed of the character in m/s")]
         public float MoveSpeed = 2.0f;
@@ -388,5 +392,6 @@ namespace StarterAssets
                 AudioSource.PlayClipAtPoint(LandingAudioClip, transform.TransformPoint(_controller.center), FootstepAudioVolume);
             }
         }
+        
     }
 }

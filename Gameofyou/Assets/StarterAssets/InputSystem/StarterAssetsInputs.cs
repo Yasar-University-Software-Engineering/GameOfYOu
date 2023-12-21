@@ -12,8 +12,9 @@ namespace StarterAssets
 		public Vector2 look;
 		public bool jump;
 		public bool sprint;
+        public AudioSource jumpSound;
 
-		[Header("Movement Settings")]
+        [Header("Movement Settings")]
 		public bool analogMovement;
 
 		[Header("Mouse Cursor Settings")]
@@ -59,7 +60,8 @@ namespace StarterAssets
 		public void JumpInput(bool newJumpState)
 		{
 			jump = newJumpState;
-		}
+            jumpSound.Play();
+        }
 
 		public void SprintInput(bool newSprintState)
 		{
