@@ -17,7 +17,11 @@ namespace StarterAssets
 #endif
     public class ThirdPersonController : MonoBehaviour
     {
-
+        public Animator animator;
+        public AudioSource audioSource;
+        public AudioSource audioSource2;
+        private float musicLength = 3f; // Müziğin süresi
+        private bool isPlaying = false;
         [Header("Player")]
         [Tooltip("Move speed of the character in m/s")]
         public float MoveSpeed = 2.0f;
@@ -163,6 +167,25 @@ namespace StarterAssets
             JumpAndGravity();
             GroundedCheck();
             Move();
+
+            // Q tuşuna basıldığında
+            if (Input.GetKeyDown(KeyCode.Q) && !isPlaying)
+            {
+                // Animasyon başlat
+                animator.SetBool("IsDancing", true);
+
+                // Müzik başlat
+                audioSource.Play();
+
+                if (audioSource2.isPlaying)
+                {
+                    audioSource2.Pause();
+                }
+
+                // 3 saniye sonra durdur
+                Invoke("StopDanceAndMusic", musicLength);
+                isPlaying = true;
+            }
         }
 
         private void LateUpdate()
@@ -392,6 +415,26 @@ namespace StarterAssets
                 AudioSource.PlayClipAtPoint(LandingAudioClip, transform.TransformPoint(_controller.center), FootstepAudioVolume);
             }
         }
-        
+
+        void StopDanceAndMusic()
+        {
+            // Animasyon durdur
+            animator.SetBool("IsDancing", false);
+
+            // Müzik durdur
+            audioSource.Stop();
+
+            if (audioSource2.isPlaying == false)
+            {
+                audioSource2.UnPause();
+            }
+
+            isPlaying = false;
+        }
+
     }
+
+
+
+    
 }
