@@ -121,6 +121,7 @@
 -define:TEXTCORE_FONT_ENGINE_1_5_OR_NEWER
 -define:CSHARP_7_OR_LATER
 -define:CSHARP_7_3_OR_NEWER
+-r:"Assets/UMotionEditor/Plugins/Application/UMotionApplication.dll"
 -r:"C:/Program Files/Unity/Hub/Editor/2022.3.10f1/Editor/Data/Managed/UnityEngine/UnityEditor.CoreModule.dll"
 -r:"C:/Program Files/Unity/Hub/Editor/2022.3.10f1/Editor/Data/Managed/UnityEngine/UnityEditor.DeviceSimulatorModule.dll"
 -r:"C:/Program Files/Unity/Hub/Editor/2022.3.10f1/Editor/Data/Managed/UnityEngine/UnityEditor.DiagnosticsModule.dll"
@@ -334,8 +335,8 @@
 -r:"Library/Bee/artifacts/1900b0aE.dag/Cinemachine.ref.dll"
 -r:"Library/Bee/artifacts/1900b0aE.dag/com.unity.cinemachine.editor.ref.dll"
 -r:"Library/Bee/artifacts/1900b0aE.dag/PPv2URPConverters.ref.dll"
--r:"Library/Bee/artifacts/1900b0aE.dag/UniGLTF.ref.dll"
--r:"Library/Bee/artifacts/1900b0aE.dag/UniHumanoid.ref.dll"
+-r:"Library/Bee/artifacts/1900b0aE.dag/UMotionSourceApplication.ref.dll"
+-r:"Library/Bee/artifacts/1900b0aE.dag/UMotionSourceEditor.ref.dll"
 -r:"Library/Bee/artifacts/1900b0aE.dag/Unity.Burst.Editor.ref.dll"
 -r:"Library/Bee/artifacts/1900b0aE.dag/Unity.Burst.ref.dll"
 -r:"Library/Bee/artifacts/1900b0aE.dag/Unity.EditorCoroutines.Editor.ref.dll"
@@ -375,7 +376,6 @@
 -r:"Library/Bee/artifacts/1900b0aE.dag/Unity.VSCode.Editor.ref.dll"
 -r:"Library/Bee/artifacts/1900b0aE.dag/UnityEditor.UI.ref.dll"
 -r:"Library/Bee/artifacts/1900b0aE.dag/UnityEngine.UI.ref.dll"
--r:"Library/Bee/artifacts/1900b0aE.dag/VRM10.ref.dll"
 -r:"Library/Bee/artifacts/1900b0aE.dag/VRMShaders.GLTF.IO.Runtime.ref.dll"
 -analyzer:"C:/Program Files/Unity/Hub/Editor/2022.3.10f1/Editor/Data/Tools/Unity.SourceGenerators/Unity.Properties.SourceGenerator.dll"
 -analyzer:"C:/Program Files/Unity/Hub/Editor/2022.3.10f1/Editor/Data/Tools/Unity.SourceGenerators/Unity.SourceGenerators.dll"
@@ -402,18 +402,7 @@
 "Assets/StarterAssets/ThirdPersonController/Scripts/BasicRigidBodyPush.cs"
 "Assets/StarterAssets/ThirdPersonController/Scripts/ThirdPersonController.cs"
 "Assets/StarterAssets/TutorialInfo/Scripts/Readme.cs"
-"Assets/unity-chan!/Unity-chan! Model/Scripts/AutoBlink.cs"
-"Assets/unity-chan!/Unity-chan! Model/Scripts/CameraController.cs"
-"Assets/unity-chan!/Unity-chan! Model/Scripts/FaceUpdate.cs"
-"Assets/unity-chan!/Unity-chan! Model/Scripts/IdleChanger.cs"
-"Assets/unity-chan!/Unity-chan! Model/Scripts/IKCtrlRightHand.cs"
-"Assets/unity-chan!/Unity-chan! Model/Scripts/RandomWind.cs"
-"Assets/unity-chan!/Unity-chan! Model/Scripts/SpringBone.cs"
-"Assets/unity-chan!/Unity-chan! Model/Scripts/SpringCollider.cs"
-"Assets/unity-chan!/Unity-chan! Model/Scripts/SpringManager.cs"
-"Assets/unity-chan!/Unity-chan! Model/Scripts/ThirdPersonCamera.cs"
-"Assets/unity-chan!/Unity-chan! Model/Scripts/UnityChanControlScriptWithRgidBody.cs"
-"Assets/unity-chan!/Unity-chan! Model/SplashScreen/Scripts/SplashScreen.cs"
+"Assets/UMotionExamples/Miscellaneous/Scripts/ResetPosition.cs"
 -langversion:9.0
 
 /deterministic
