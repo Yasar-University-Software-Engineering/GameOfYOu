@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.0025792886, g: 0.011392278, b: 0.01821796, a: 1}
+  m_IndirectSpecularColor: {r: 0.0021264493, g: 0.008726944, b: 0.013972582, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -6622,7 +6622,7 @@ PrefabInstance:
       objectReference: {fileID: 112562692}
     - target: {fileID: 231797884403191632, guid: af4948be9d824e041a0ba4b139f5916b, type: 3}
       propertyPath: GroundLayers.m_Bits
-      value: 9
+      value: 73
       objectReference: {fileID: 0}
     - target: {fileID: 515432678282813491, guid: af4948be9d824e041a0ba4b139f5916b, type: 3}
       propertyPath: m_Radius
@@ -6678,7 +6678,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2443553082364002274, guid: af4948be9d824e041a0ba4b139f5916b, type: 3}
       propertyPath: strength
-      value: 2.13
+      value: 2.39
       objectReference: {fileID: 0}
     - target: {fileID: 2443553082364002274, guid: af4948be9d824e041a0ba4b139f5916b, type: 3}
       propertyPath: pushLayers.m_Bits
